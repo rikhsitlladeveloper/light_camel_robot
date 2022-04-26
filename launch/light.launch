@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<launch>
+    
+    <node name="light" pkg="light_camel" type="Light_service.py" output="screen" respawn="true" >
+    <rosparam file="$(find light_camel)/param/parameter.yaml" command="load"/>
+    </node>
+</launch>
